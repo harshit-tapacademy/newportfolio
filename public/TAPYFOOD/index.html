@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TAPY Food — Street-Fresh Delivered Fast</title>
+    <meta
+      name="description"
+      content="TAPY Food delivers the city's best street food, gourmet meals, and local flavors right to your doorstep. Order now and taste the difference."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <!-- Preconnect for font performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  </head>
+  <body>
+    <!-- ============================================
+         Navigation
+    ============================================ -->
+    <nav class="navbar" id="navbar">
+      <div class="container container--wide">
+        <a href="#home" class="nav-brand">
+          <div class="nav-brand-icon">🔥</div>
+          <div class="nav-brand-name">TAPY <span>Food</span></div>
+        </a>
+        <ul class="navlist">
+          <li class="listitem">
+            <a class="navitem" href="#home">Home</a>
+          </li>
+          <li class="listitem">
+            <a class="navitem" href="#about">About</a>
+          </li>
+          <li class="listitem">
+            <a class="navitem" href="#best-sellers">Menu</a>
+          </li>
+          <li class="listitem">
+            <a class="navitem" href="#best-restaurants">Restaurants</a>
+          </li>
+          <li class="listitem">
+            <a class="navitem" href="#contact">Contact</a>
+          </li>
+          <li class="listitem">
+            <a class="nav-cta" href="#best-sellers">Order Now</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- ============================================
+         Hero Section
+    ============================================ -->
+    <header id="home" class="hero">
+      <div class="container container--wide">
+        <div class="hero-content animate-fade-in-up">
+          <span class="hero-label">🔥 #1 Food Delivery App</span>
+          <h1 class="hero-title">
+            Street-Fresh<br />
+            Flavors, <span class="accent">Delivered</span><br />
+            To Your Door
+          </h1>
+          <p class="hero-description">
+            From sizzling night-market favourites to chef-crafted bowls — TAPY
+            Food partners with the city's most iconic kitchens so every bite
+            arrives hot, fresh, and unforgettable.
+          </p>
+          <div class="hero-actions">
+            <a href="#best-sellers" class="btn btn--primary">Explore Menu</a>
+            <a href="#how-it-works" class="btn btn--ghost">How It Works</a>
+          </div>
+          <div class="hero-stats">
+            <div>
+              <span class="hero-stat-number">500+</span>
+              <span class="hero-stat-label">Restaurants</span>
+            </div>
+            <div>
+              <span class="hero-stat-number">120K</span>
+              <span class="hero-stat-label">Happy Customers</span>
+            </div>
+            <div>
+              <span class="hero-stat-number">25 min</span>
+              <span class="hero-stat-label">Avg Delivery</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-image-wrapper animate-fade-in delay-2">
+          <img
+            class="hero-image"
+            src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&q=80"
+            alt="Delicious street food spread with vibrant dishes"
+          />
+          <div class="hero-image-badge">
+            <span class="badge-icon">⚡</span>
+            <div class="badge-text">
+              <strong>Free Delivery</strong>
+              <span>On your first order</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <hr />
+
+    <!-- ============================================
+         About Section
+    ============================================ -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Why TAPY Food</span>
+          <h2 class="section-title">We Bring The Street To You</h2>
+          <p class="section-subtitle">
+            Explore a world of flavors with our curated selection of top-tier
+            restaurants and exclusive dishes. Fast delivery, exceptional quality,
+            every single time.
+          </p>
+        </div>
+        <div class="about-grid">
+          <div class="about-card reveal">
+            <span class="about-card-icon">🏍️</span>
+            <h3 class="about-card-title">Lightning Fast</h3>
+            <p class="about-card-text">
+              Average delivery in under 25 minutes. Track your rider in
+              real-time from kitchen to doorstep.
+            </p>
+          </div>
+          <div class="about-card reveal">
+            <span class="about-card-icon">🍳</span>
+            <h3 class="about-card-title">Curated Kitchens</h3>
+            <p class="about-card-text">
+              We partner only with restaurants that meet our quality standards.
+              Every meal is handpicked for excellence.
+            </p>
+          </div>
+          <div class="about-card reveal">
+            <span class="about-card-icon">💰</span>
+            <h3 class="about-card-title">Best Prices</h3>
+            <p class="about-card-text">
+              No hidden fees, no surge pricing. What you see is what you pay.
+              Plus exclusive daily deals.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- ============================================
+         Best Sellers Section
+    ============================================ -->
+    <section id="best-sellers" class="section section--surface">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Our Menu</span>
+          <h2 class="section-title">Best Sellers This Week</h2>
+          <p class="section-subtitle">
+            The dishes people can't stop ordering. Freshly prepared, beautifully
+            packed, delivered fast.
+          </p>
+        </div>
+
+        <div class="category-tabs">
+          <button class="category-tab category-tab--active" id="tab-all">
+            All
+          </button>
+          <button class="category-tab" id="tab-pizza">Pizza</button>
+          <button class="category-tab" id="tab-asian">Asian</button>
+          <button class="category-tab" id="tab-healthy">Healthy</button>
+          <button class="category-tab" id="tab-burgers">Burgers</button>
+          <button class="category-tab" id="tab-mexican">Mexican</button>
+        </div>
+
+        <div class="food-grid">
+          <!-- Card 1: Margherita Pizza -->
+          <article class="food-card reveal">
+            <div class="food-card-image-wrapper">
+              <img
+                class="food-card-image"
+                src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&q=80"
+                alt="Classic Margherita Pizza with fresh basil and mozzarella"
+              />
+              <span class="food-card-badge">Best Seller</span>
+              <span class="food-card-time">🕐 20 min</span>
+            </div>
+            <div class="food-card-body">
+              <div class="food-card-meta">
+                <span class="food-card-rating"
+                  ><span class="star">★</span> 4.9</span
+                >
+                <span class="food-card-cuisine">Italian</span>
+              </div>
+              <h3 class="food-card-title">Classic Margherita Pizza</h3>
+              <p class="food-card-description">
+                Fresh tomatoes, creamy mozzarella, fragrant basil, and a drizzle
+                of olive oil on a thin, crispy wood-fired crust.
+              </p>
+              <div class="food-card-footer">
+                <span class="food-card-price"
+                  >$12.99
+                  <span class="original-price">$16.99</span>
+                </span>
+                <button class="btn btn--primary" id="order-pizza">
+                  Order Now
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: Chicken Tikka -->
+          <article class="food-card reveal">
+            <div class="food-card-image-wrapper">
+              <img
+                class="food-card-image"
+                src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7?w=600&q=80"
+                alt="Chicken Tikka Masala with rich creamy sauce"
+              />
+              <span class="food-card-badge">Popular</span>
+              <span class="food-card-time">🕐 30 min</span>
+            </div>
+            <div class="food-card-body">
+              <div class="food-card-meta">
+                <span class="food-card-rating"
+                  ><span class="star">★</span> 4.8</span
+                >
+                <span class="food-card-cuisine">Indian</span>
+              </div>
+              <h3 class="food-card-title">Chicken Tikka Masala</h3>
+              <p class="food-card-description">
+                Tender chunks of grilled chicken enveloped in a rich, creamy, and
+                mildly spiced tomato sauce. Served with warm garlic naan.
+              </p>
+              <div class="food-card-footer">
+                <span class="food-card-price"
+                  >$14.49
+                  <span class="original-price">$18.99</span>
+                </span>
+                <button class="btn btn--primary" id="order-tikka">
+                  Order Now
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: Sushi Roll -->
+          <article class="food-card reveal">
+            <div class="food-card-image-wrapper">
+              <img
+                class="food-card-image"
+                src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?w=600&q=80"
+                alt="Fresh sushi rolls beautifully plated"
+              />
+              <span class="food-card-time">🕐 25 min</span>
+            </div>
+            <div class="food-card-body">
+              <div class="food-card-meta">
+                <span class="food-card-rating"
+                  ><span class="star">★</span> 4.7</span
+                >
+                <span class="food-card-cuisine">Japanese</span>
+              </div>
+              <h3 class="food-card-title">Spicy Tuna Sushi Roll</h3>
+              <p class="food-card-description">
+                Fresh tuna mixed with spicy mayo, rolled with crisp cucumber, and
+                topped with sesame seeds. Comes with soy sauce and wasabi.
+              </p>
+              <div class="food-card-footer">
+                <span class="food-card-price">$16.99</span>
+                <button class="btn btn--primary" id="order-sushi">
+                  Order Now
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4: Quinoa Bowl -->
+          <article class="food-card reveal">
+            <div class="food-card-image-wrapper">
+              <img
+                class="food-card-image"
+                src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600&q=80"
+                alt="Healthy quinoa bowl with fresh vegetables"
+              />
+              <span class="food-card-badge">Healthy</span>
+              <span class="food-card-time">🕐 15 min</span>
+            </div>
+            <div class="food-card-body">
+              <div class="food-card-meta">
+                <span class="food-card-rating"
+                  ><span class="star">★</span> 4.8</span
+                >
+                <span class="food-card-cuisine">Healthy</span>
+              </div>
+              <h3 class="food-card-title">Avocado Quinoa Power Bowl</h3>
+              <p class="food-card-description">
+                A nutritious mix of quinoa, sliced avocado, black beans, roasted
+                corn, and a zesty lime vinaigrette dressing.
+              </p>
+              <div class="food-card-footer">
+                <span class="food-card-price">$11.99</span>
+                <button class="btn btn--primary" id="order-bowl">
+                  Order Now
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 5: Gourmet Burger -->
+          <article class="food-card reveal">
+            <div class="food-card-image-wrapper">
+              <img
+                class="food-card-image"
+                src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&q=80"
+                alt="Gourmet street-style burger with fresh toppings"
+              />
+              <span class="food-card-badge">New</span>
+              <span class="food-card-time">🕐 18 min</span>
+            </div>
+            <div class="food-card-body">
+              <div class="food-card-meta">
+                <span class="food-card-rating"
+                  ><span class="star">★</span> 4.9</span
+                >
+                <span class="food-card-cuisine">American</span>
+              </div>
+              <h3 class="food-card-title">Smoked Street Burger</h3>
+              <p class="food-card-description">
+                Double-stacked Angus patty with smoked cheddar, caramelized
+                onions, crispy bacon, and our signature TAPY sauce.
+              </p>
+              <div class="food-card-footer">
+                <span class="food-card-price"
+                  >$13.99
+                  <span class="original-price">$17.49</span>
+                </span>
+                <button class="btn btn--primary" id="order-burger">
+                  Order Now
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 6: Tacos -->
+          <article class="food-card reveal">
+            <div class="food-card-image-wrapper">
+              <img
+                class="food-card-image"
+                src="https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?w=600&q=80"
+                alt="Authentic street-style tacos with fresh salsa"
+              />
+              <span class="food-card-time">🕐 22 min</span>
+            </div>
+            <div class="food-card-body">
+              <div class="food-card-meta">
+                <span class="food-card-rating"
+                  ><span class="star">★</span> 4.6</span
+                >
+                <span class="food-card-cuisine">Mexican</span>
+              </div>
+              <h3 class="food-card-title">Street-Style Tacos Trio</h3>
+              <p class="food-card-description">
+                Three soft corn tortillas loaded with carne asada, pickled
+                onions, fresh cilantro, and house-made salsa verde.
+              </p>
+              <div class="food-card-footer">
+                <span class="food-card-price">$10.99</span>
+                <button class="btn btn--primary" id="order-tacos">
+                  Order Now
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- ============================================
+         Best Restaurants Section
+    ============================================ -->
+    <section id="best-restaurants" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Partner Restaurants</span>
+          <h2 class="section-title">Best Restaurants Near You</h2>
+          <p class="section-subtitle">
+            Handpicked restaurants known for their quality, flavour, and
+            consistency. Your next favourite meal is here.
+          </p>
+        </div>
+
+        <div class="restaurant-grid">
+          <!-- Restaurant 1 -->
+          <article class="restaurant-card reveal">
+            <div class="restaurant-card-image-wrapper">
+              <img
+                class="restaurant-card-image"
+                src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&q=80"
+                alt="The Spice Route — elegant warm restaurant interior"
+              />
+              <span class="restaurant-card-featured">Featured</span>
+            </div>
+            <div class="restaurant-card-body">
+              <div class="restaurant-card-header">
+                <h3 class="restaurant-card-name">The Spice Route</h3>
+                <span class="restaurant-card-rating">★ 4.8</span>
+              </div>
+              <div class="restaurant-card-info">
+                <span>🕐 25–35 min</span>
+                <span>📍 2.4 km</span>
+                <span>💰 Free delivery</span>
+              </div>
+              <p class="restaurant-card-description">
+                Authentic Indian spices and traditional recipes passed down
+                through generations. Known for incredible curries and tandoori
+                specials.
+              </p>
+              <div class="restaurant-card-tags">
+                <span class="restaurant-tag">Indian</span>
+                <span class="restaurant-tag">Curry</span>
+                <span class="restaurant-tag">Tandoori</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Restaurant 2 -->
+          <article class="restaurant-card reveal">
+            <div class="restaurant-card-image-wrapper">
+              <img
+                class="restaurant-card-image"
+                src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&q=80"
+                alt="Luigi's Italian Kitchen — rustic Italian dining"
+              />
+            </div>
+            <div class="restaurant-card-body">
+              <div class="restaurant-card-header">
+                <h3 class="restaurant-card-name">Luigi's Italian Kitchen</h3>
+                <span class="restaurant-card-rating">★ 4.7</span>
+              </div>
+              <div class="restaurant-card-info">
+                <span>🕐 20–30 min</span>
+                <span>📍 1.8 km</span>
+                <span>💰 $2.99 delivery</span>
+              </div>
+              <p class="restaurant-card-description">
+                Wood-fired pizzas, handmade pasta, and the most delightful
+                tiramisu in town. Perfect for date night at home.
+              </p>
+              <div class="restaurant-card-tags">
+                <span class="restaurant-tag">Italian</span>
+                <span class="restaurant-tag">Pizza</span>
+                <span class="restaurant-tag">Pasta</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Restaurant 3 -->
+          <article class="restaurant-card reveal">
+            <div class="restaurant-card-image-wrapper">
+              <img
+                class="restaurant-card-image"
+                src="https://images.unsplash.com/photo-1590846406792-0adc7f938f1d?w=600&q=80"
+                alt="Tokyo Sushi Bar — modern Japanese restaurant"
+              />
+              <span class="restaurant-card-featured">Top Rated</span>
+            </div>
+            <div class="restaurant-card-body">
+              <div class="restaurant-card-header">
+                <h3 class="restaurant-card-name">Tokyo Sushi Bar</h3>
+                <span class="restaurant-card-rating">★ 4.9</span>
+              </div>
+              <div class="restaurant-card-info">
+                <span>🕐 30–40 min</span>
+                <span>📍 3.1 km</span>
+                <span>💰 Free delivery</span>
+              </div>
+              <p class="restaurant-card-description">
+                Freshly rolled sushi, flavorful ramen bowls, and a wide
+                assortment of sashimi. Highest quality ingredients imported
+                directly from Japan.
+              </p>
+              <div class="restaurant-card-tags">
+                <span class="restaurant-tag">Japanese</span>
+                <span class="restaurant-tag">Sushi</span>
+                <span class="restaurant-tag">Ramen</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- ============================================
+         How It Works Section
+    ============================================ -->
+    <section id="how-it-works" class="section section--surface">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">How It Works</span>
+          <h2 class="section-title">Order In 4 Easy Steps</h2>
+          <p class="section-subtitle">
+            From browsing to biting — your meal is just four simple steps away.
+          </p>
+        </div>
+        <div class="steps-grid">
+          <div class="step-card reveal">
+            <div class="step-number">01</div>
+            <span class="step-icon">📍</span>
+            <h3 class="step-title">Choose Location</h3>
+            <p class="step-text">
+              Share your delivery address and we'll show the best restaurants
+              nearby.
+            </p>
+          </div>
+          <div class="step-card reveal">
+            <div class="step-number">02</div>
+            <span class="step-icon">🍽️</span>
+            <h3 class="step-title">Pick Your Meal</h3>
+            <p class="step-text">
+              Browse menus, check reviews, and pick from hundreds of dishes
+              across cuisines.
+            </p>
+          </div>
+          <div class="step-card reveal">
+            <div class="step-number">03</div>
+            <span class="step-icon">💳</span>
+            <h3 class="step-title">Pay Securely</h3>
+            <p class="step-text">
+              Pay online or choose cash on delivery. All transactions are fully
+              encrypted.
+            </p>
+          </div>
+          <div class="step-card reveal">
+            <div class="step-number">04</div>
+            <span class="step-icon">🛵</span>
+            <h3 class="step-title">Enjoy Your Food</h3>
+            <p class="step-text">
+              Track your rider in real-time. Fresh food arrives at your doorstep
+              in minutes.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- ============================================
+         Testimonials Section
+    ============================================ -->
+    <section id="testimonials" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Testimonials</span>
+          <h2 class="section-title">What Our Customers Say</h2>
+          <p class="section-subtitle">
+            Join thousands of food lovers who trust TAPY Food for their daily
+            meals.
+          </p>
+        </div>
+        <div class="testimonials-grid">
+          <div class="testimonial-card reveal">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">
+              "TAPY Food has completely changed my dinner routine. The food
+              arrives so fast and it's always piping hot. The Smoked Street
+              Burger is absolutely addictive!"
+            </p>
+            <div class="testimonial-author">
+              <div
+                class="testimonial-avatar"
+                style="background-color: #f23c3c22; display:flex; align-items:center; justify-content:center; font-size:1.3rem;"
+              >
+                🙋‍♀️
+              </div>
+              <div>
+                <div class="testimonial-author-name">Priya Sharma</div>
+                <div class="testimonial-author-role">Food Blogger</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card reveal">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">
+              "The restaurant selection is incredible. I discovered Tokyo Sushi
+              Bar through TAPY and it's now my go-to Friday night order. The
+              tracking feature is super handy."
+            </p>
+            <div class="testimonial-author">
+              <div
+                class="testimonial-avatar"
+                style="background-color: #1a0f0511; display:flex; align-items:center; justify-content:center; font-size:1.3rem;"
+              >
+                🙋‍♂️
+              </div>
+              <div>
+                <div class="testimonial-author-name">Arjun Patel</div>
+                <div class="testimonial-author-role">Software Engineer</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card reveal">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">
+              "As a busy mom, TAPY Food saves me so much time. The Avocado
+              Quinoa Bowl is healthy, delicious, and my kids love it. Best
+              delivery app hands down."
+            </p>
+            <div class="testimonial-author">
+              <div
+                class="testimonial-avatar"
+                style="background-color: #7a6a5422; display:flex; align-items:center; justify-content:center; font-size:1.3rem;"
+              >
+                👩
+              </div>
+              <div>
+                <div class="testimonial-author-name">Meera Krishnan</div>
+                <div class="testimonial-author-role">Busy Parent</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- ============================================
+         Promo / App Download Section
+    ============================================ -->
+    <section class="promo-section section--surface">
+      <div class="container">
+        <div class="promo-grid">
+          <img
+            class="promo-image reveal"
+            src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?w=600&q=80"
+            alt="Beautifully plated gourmet food ready for delivery"
+          />
+          <div class="promo-content reveal">
+            <span class="promo-label">Exclusive Deals</span>
+            <h2 class="promo-title">Get 40% Off Your First Order</h2>
+            <p class="promo-text">
+              Download the TAPY Food app and unlock exclusive deals, real-time
+              tracking, and a personalized menu curated just for your taste
+              buds.
+            </p>
+            <div class="promo-features">
+              <div class="promo-feature">
+                <span class="promo-feature-icon">✓</span>
+                Real-time order tracking
+              </div>
+              <div class="promo-feature">
+                <span class="promo-feature-icon">✓</span>
+                Exclusive in-app discounts
+              </div>
+              <div class="promo-feature">
+                <span class="promo-feature-icon">✓</span>
+                Scheduled deliveries
+              </div>
+              <div class="promo-feature">
+                <span class="promo-feature-icon">✓</span>
+                24/7 customer support
+              </div>
+            </div>
+            <div class="hero-actions">
+              <a href="#" class="btn btn--primary" id="download-app"
+                >Download App</a
+              >
+              <a href="#best-sellers" class="btn btn--secondary" id="learn-more"
+                >Learn More</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- ============================================
+         CTA Banner
+    ============================================ -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-banner reveal">
+          <h2 class="cta-title">Hungry? Let's Fix That.</h2>
+          <p class="cta-subtitle">
+            Browse 500+ restaurants, pick your favourite dish, and have it
+            delivered in minutes. No minimum order.
+          </p>
+          <div class="cta-actions">
+            <a href="#best-sellers" class="btn btn--primary" id="cta-order"
+              >Order Now</a
+            >
+            <a href="#best-restaurants" class="btn btn--ghost" id="cta-browse"
+              >Browse Restaurants</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- ============================================
+         Contact Section
+    ============================================ -->
+    <section id="contact" class="section section--surface">
+      <div class="container">
+        <div class="contact-wrapper">
+          <div class="contact-info reveal">
+            <h2 class="contact-info-title">Get In Touch</h2>
+            <p class="contact-info-text">
+              Have a question, feedback, or a partnership proposal? We'd love to
+              hear from you. Our team typically responds within 24 hours.
+            </p>
+            <div class="contact-details">
+              <div class="contact-detail">
+                <div class="contact-detail-icon">📧</div>
+                <div>
+                  <div class="contact-detail-label">Email</div>
+                  <div class="contact-detail-value">hello@tapyfood.com</div>
+                </div>
+              </div>
+              <div class="contact-detail">
+                <div class="contact-detail-icon">📞</div>
+                <div>
+                  <div class="contact-detail-label">Phone</div>
+                  <div class="contact-detail-value">+1 (800) TAPY-FOOD</div>
+                </div>
+              </div>
+              <div class="contact-detail">
+                <div class="contact-detail-icon">📍</div>
+                <div>
+                  <div class="contact-detail-label">Address</div>
+                  <div class="contact-detail-value">
+                    42 Street Food Lane, Flavor District, FC 10001
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <form class="contact-form reveal" id="contact-form">
+            <div class="form-group">
+              <label class="form-label" for="contact-name">Your Name</label>
+              <input
+                class="form-input"
+                type="text"
+                id="contact-name"
+                placeholder="John Doe"
+              />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="contact-email">Email Address</label>
+              <input
+                class="form-input"
+                type="email"
+                id="contact-email"
+                placeholder="john@example.com"
+              />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="contact-phone"
+                >Phone Number</label
+              >
+              <input
+                class="form-input"
+                type="tel"
+                id="contact-phone"
+                placeholder="+1 (555) 123-4567"
+              />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="contact-message">Message</label>
+              <textarea
+                class="form-textarea"
+                id="contact-message"
+                placeholder="Tell us what's on your mind..."
+              ></textarea>
+            </div>
+            <button class="btn btn--primary" type="submit" id="contact-submit">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         Footer
+    ============================================ -->
+    <footer class="footer" id="foot">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <div class="footer-brand-name">TAPY <span>Food</span></div>
+            <p class="footer-brand-text">
+              Delivering the city's best street food and gourmet flavors right
+              to your doorstep. Fresh, fast, and always delicious.
+            </p>
+            <div class="footer-socials">
+              <a
+                href="https://linkedin.com"
+                class="footer-social-link"
+                aria-label="LinkedIn"
+                id="social-linkedin"
+              >
+                <img
+                  src="https://cdn-icons-png.flaticon.com/64/174/174857.png"
+                  alt="LinkedIn"
+                />
+              </a>
+              <a
+                href="https://twitter.com"
+                class="footer-social-link"
+                aria-label="Twitter"
+                id="social-twitter"
+              >
+                <img
+                  src="https://cdn-icons-png.flaticon.com/64/733/733590.png"
+                  alt="Twitter"
+                />
+              </a>
+              <a
+                href="https://youtube.com"
+                class="footer-social-link"
+                aria-label="YouTube"
+                id="social-youtube"
+              >
+                <img
+                  src="https://cdn-icons-png.flaticon.com/64/1384/1384060.png"
+                  alt="YouTube"
+                />
+              </a>
+              <a
+                href="https://instagram.com"
+                class="footer-social-link"
+                aria-label="Instagram"
+                id="social-instagram"
+              >
+                <img
+                  src="https://cdn-icons-png.flaticon.com/64/174/174855.png"
+                  alt="Instagram"
+                />
+              </a>
+            </div>
+          </div>
+          <div>
+            <h4 class="footer-col-title">Company</h4>
+            <div class="footer-links">
+              <a href="#about" class="footer-link">About Us</a>
+              <a href="#" class="footer-link">Careers</a>
+              <a href="#" class="footer-link">Blog</a>
+              <a href="#contact" class="footer-link">Contact</a>
+            </div>
+          </div>
+          <div>
+            <h4 class="footer-col-title">Support</h4>
+            <div class="footer-links">
+              <a href="#" class="footer-link">Help Center</a>
+              <a href="#" class="footer-link">Safety</a>
+              <a href="#" class="footer-link">Terms of Service</a>
+              <a href="#" class="footer-link">Privacy Policy</a>
+            </div>
+          </div>
+          <div>
+            <h4 class="footer-col-title">For Restaurants</h4>
+            <div class="footer-links">
+              <a href="#" class="footer-link">Partner With Us</a>
+              <a href="#" class="footer-link">Restaurant Dashboard</a>
+              <a href="#" class="footer-link">Delivery Fleet</a>
+              <a href="#" class="footer-link">Advertise</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p class="footer-copyright">
+            &copy; 2026 TAPY Food Inc. All Rights Reserved.
+          </p>
+          <div class="footer-bottom-links">
+            <a href="#" class="footer-bottom-link">Privacy</a>
+            <a href="#" class="footer-bottom-link">Terms</a>
+            <a href="#" class="footer-bottom-link">Cookies</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ============================================
+         Scroll Reveal Script
+    ============================================ -->
+    <script>
+      // Intersection Observer for scroll-reveal animations
+      document.addEventListener("DOMContentLoaded", () => {
+        const revealElements = document.querySelectorAll(".reveal");
+
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          {
+            threshold: 0.1,
+            rootMargin: "0px 0px -40px 0px",
+          }
+        );
+
+        revealElements.forEach((el) => observer.observe(el));
+
+        // Category tab switching (visual only)
+        const tabs = document.querySelectorAll(".category-tab");
+        tabs.forEach((tab) => {
+          tab.addEventListener("click", () => {
+            tabs.forEach((t) => t.classList.remove("category-tab--active"));
+            tab.classList.add("category-tab--active");
+          });
+        });
+
+        // Navbar background on scroll
+        const navbar = document.getElementById("navbar");
+        window.addEventListener("scroll", () => {
+          if (window.scrollY > 100) {
+            navbar.style.backgroundColor = "rgba(245, 233, 207, 0.97)";
+          } else {
+            navbar.style.backgroundColor = "rgba(245, 233, 207, 0.92)";
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
