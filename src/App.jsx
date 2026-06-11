@@ -402,9 +402,9 @@ function App() {
             <article className="project-card-air">
               <div className="project-card-header" style={{ overflow: 'hidden', height: '200px' }}>
                 <img 
-                  src="https://images.unsplash.com/photo-1526367790999-015078648c7e?w=800&q=80" 
+                  src="/tapyfood_screenshot.png" 
                   alt="TAPY Food App screenshot"
-                  style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center' }} 
+                  style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top center' }} 
                 />
               </div>
               <div className="project-card-body">
