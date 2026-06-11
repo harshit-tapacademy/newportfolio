@@ -371,7 +371,7 @@ function App() {
             <article className="project-card-air">
               <div className="project-card-header" style={{ overflow: 'hidden', height: '200px' }}>
                 <img 
-                  src="https://images.unsplash.com/photo-1563013544-824ae1d704d3?w=800&q=80" 
+                  src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80" 
                   alt="E-Commerce System preview"
                   style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
                 />
@@ -402,9 +402,9 @@ function App() {
             <article className="project-card-air">
               <div className="project-card-header" style={{ overflow: 'hidden', height: '200px' }}>
                 <img 
-                  src="/tapyfood_screenshot.png" 
+                  src="https://images.unsplash.com/photo-1526367790999-015078648c7e?w=800&q=80" 
                   alt="TAPY Food App screenshot"
-                  style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top center' }} 
+                  style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center' }} 
                 />
               </div>
               <div className="project-card-body">
